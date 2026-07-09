@@ -1,13 +1,13 @@
-# Brilliant Brain AI — Website
+# Bright Minds Academy — Website
 
-A complete multi-page website for Brilliant Brain AI, including a Node.js/Express backend that handles contact form submissions via email.
+A complete multi-page website for Bright Minds Academy, including a Node.js/Express backend that handles contact form submissions via email.
 
 ---
 
 ## 📁 File Structure
 
 ```
-brilliant-brain-ai/
+bright-minds-academy/
 ├── index.html              ← Homepage (main landing page)
 ├── css/
 │   └── style.css           ← All styles
@@ -36,7 +36,6 @@ Search the code for `✏️ FILL IN:` and `✏️ LOGO:` comments — these mark
 
 Key things to fill in:
 - Company description and mission (About section on `index.html`)
-- Real testimonials (replace placeholder quotes and names)
 - Contact details: email, phone, address, hours
 - Stats (number of students, satisfaction rate, etc.)
 - Social media links (Facebook, Instagram, X)
@@ -50,7 +49,7 @@ Once your logo is ready:
 2. Find every `<!-- ✏️ LOGO: Replace... -->` comment in each HTML file
 3. Replace the `<span class="logo-text">...</span>` line with:
    ```html
-   <img src="../images/logo.png" alt="Brilliant Brain AI" class="logo-img" />
+   <img src="../images/logo.png" alt="Bright Minds Academy" class="logo-img" />
    ```
    (Use `src="images/logo.png"` without the `../` on `index.html`)
 
@@ -67,11 +66,11 @@ Once your logo is ready:
 1. Go to [netlify.com](https://netlify.com) and sign up (free)
 2. Click **"Add new site → Deploy manually"**
 3. Drag and drop your entire project folder into the Netlify deploy area
-4. Netlify gives you a URL like `brilliant-brain.netlify.app`
+4. Netlify gives you a URL like `bright-minds-academy.netlify.app`
 
 #### Connect your domain:
 1. In Netlify → Site Settings → Domain management → Add custom domain
-2. Enter your domain (e.g. `brilliantbrainai.com`)
+2. Enter your domain (e.g. `brightmindsacademy.com`)
 3. Netlify shows you nameservers or DNS records to add
 4. Log in to where you bought your domain (GoDaddy, Namecheap, Google Domains, etc.)
 5. Update the DNS records as instructed by Netlify
@@ -124,7 +123,7 @@ Once your logo is ready:
    git add .
    git commit -m "Initial commit"
    # Create a new repo on github.com, then:
-   git remote add origin https://github.com/YOUR_USERNAME/brilliant-brain-ai.git
+   git remote add origin https://github.com/YOUR_USERNAME/bright-minds-academy.git
    git push -u origin main
    ```
 
@@ -135,7 +134,7 @@ Once your logo is ready:
    - `EMAIL_PASS` = your Gmail App Password
    - `EMAIL_TO`   = where you want contact forms sent
 
-8. Railway gives you a URL like `brilliant-brain-ai.up.railway.app`
+8. Railway gives you a URL like `bright-minds-academy.up.railway.app`
 
 #### Connect your domain on Railway:
 1. Railway → Settings → Domains → Add Custom Domain
@@ -160,7 +159,7 @@ Once your logo is ready:
 1. Log into your Google account
 2. Go to **Security → 2-Step Verification** and enable it
 3. Go to **Security → App Passwords**
-4. Select "Mail" and "Other device", name it "Brilliant Brain AI"
+4. Select "Mail" and "Other device", name it "Bright Minds Academy"
 5. Copy the 16-character password Google generates
 6. Paste it as `EMAIL_PASS` in your `.env` file
 

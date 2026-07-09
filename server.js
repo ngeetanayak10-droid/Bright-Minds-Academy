@@ -1,5 +1,5 @@
 // =====================================================
-//  Brilliant Brain AI — Express Backend Server
+//  Bright Minds Academy — Express Backend Server
 //  Handles contact form submissions & sends emails
 //  Run: node server.js
 // =====================================================
@@ -11,7 +11,7 @@ const fs         = require('fs');
 
 // ✏️ FILL IN: Set these environment variables in your .env file (see README)
 const PORT       = process.env.PORT || 3000;
-const EMAIL_USER = process.env.EMAIL_USER;  // e.g. hello@brilliantbrainai.com
+const EMAIL_USER = process.env.EMAIL_USER;  // e.g. hello@brightmindsacademy.com
 const EMAIL_PASS = process.env.EMAIL_PASS;  // App password for your email account
 const EMAIL_TO   = process.env.EMAIL_TO || EMAIL_USER; // where form submissions go
 
@@ -54,7 +54,7 @@ app.post('/api/contact', async (req, res) => {
   });
 
   const mailOptions = {
-    from: `"Brilliant Brain AI Website" <${EMAIL_USER}>`,
+    from: `"Bright Minds Academy Website" <${EMAIL_USER}>`,
     to:   EMAIL_TO,
     replyTo: email,
     subject: `New Enquiry — ${service} — ${firstName} ${lastName}`,
@@ -70,7 +70,7 @@ app.post('/api/contact', async (req, res) => {
         <hr style="margin:20px 0; border:none; border-top:1px solid #e2e8f0;" />
         <h3 style="margin-bottom:8px;">Message:</h3>
         <p style="background:#f8fafc; padding:16px; border-radius:8px; line-height:1.7;">${message.replace(/\n/g, '<br/>')}</p>
-        <p style="color:#94a3b8; font-size:12px; margin-top:24px;">Sent from brilliantbrainai.com contact form</p>
+        <p style="color:#94a3b8; font-size:12px; margin-top:24px;">Sent from brightmindsacademy.com contact form</p>
       </div>
     `,
   };
@@ -91,5 +91,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Brilliant Brain AI server running at http://localhost:${PORT}`);
+  console.log(`🚀 Bright Minds Academy server running at http://localhost:${PORT}`);
 });

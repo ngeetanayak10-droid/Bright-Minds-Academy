@@ -1,5 +1,5 @@
 // =====================================================
-//  Brilliant Brain AI — Main JavaScript
+//  Bright Minds Academy — Main JavaScript
 // =====================================================
 
 /* ---------- Navbar: scroll shadow + mobile toggle ---------- */
