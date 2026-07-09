@@ -1,7 +1,7 @@
 {
   "name": "bright-minds-academy",
   "version": "1.0.0",
-  "description": ". website backend",
+  "description": "Bright Minds Academy website backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

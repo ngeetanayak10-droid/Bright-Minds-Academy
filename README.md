@@ -1,6 +1,6 @@
-# . — Website
+# Bright Minds Academy — Website
 
-A complete multi-page website for ., including a Node.js/Express backend that handles contact form submissions via email.
+A complete multi-page website for Bright Minds Academy, including a Node.js/Express backend that handles contact form submissions via email.
 
 ---
 
@@ -49,7 +49,7 @@ Once your logo is ready:
 2. Find every `<!-- ✏️ LOGO: Replace... -->` comment in each HTML file
 3. Replace the `<span class="logo-text">...</span>` line with:
    ```html
-   <img src="../images/logo.png" alt="." class="logo-img" />
+   <img src="../images/logo.png" alt="Bright Minds Academy" class="logo-img" />
    ```
    (Use `src="images/logo.png"` without the `../` on `index.html`)
 
@@ -159,7 +159,7 @@ Once your logo is ready:
 1. Log into your Google account
 2. Go to **Security → 2-Step Verification** and enable it
 3. Go to **Security → App Passwords**
-4. Select "Mail" and "Other device", name it "."
+4. Select "Mail" and "Other device", name it "Bright Minds Academy"
 5. Copy the 16-character password Google generates
 6. Paste it as `EMAIL_PASS` in your `.env` file
 
