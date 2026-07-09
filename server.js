@@ -1,5 +1,5 @@
 // =====================================================
-//  Bright Minds Academy — Express Backend Server
+//  . — Express Backend Server
 //  Handles contact form submissions & sends emails
 //  Run: node server.js
 // =====================================================
@@ -54,7 +54,7 @@ app.post('/api/contact', async (req, res) => {
   });
 
   const mailOptions = {
-    from: `"Bright Minds Academy Website" <${EMAIL_USER}>`,
+    from: `". Website" <${EMAIL_USER}>`,
     to:   EMAIL_TO,
     replyTo: email,
     subject: `New Enquiry — ${service} — ${firstName} ${lastName}`,
@@ -91,5 +91,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Bright Minds Academy server running at http://localhost:${PORT}`);
+  console.log(`🚀 . server running at http://localhost:${PORT}`);
 });

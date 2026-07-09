@@ -1,5 +1,5 @@
 // =====================================================
-//  Bright Minds Academy — Main JavaScript
+//  . — Main JavaScript
 // =====================================================
 
 /* ---------- Navbar: scroll shadow + mobile toggle ---------- */
