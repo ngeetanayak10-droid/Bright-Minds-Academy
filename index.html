@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brilliant Brain Academy – Personalized Learning for Every Mind</title>
+  <meta name="description" content="Brilliant Brain Academy offers tutoring, ABA therapy, yoga, mini courses, parent consulting, and language classes in Oshawa, Ontario." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- ✏️ LOGO: <link rel="icon" href="images/favicon.ico" /> -->
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <!-- ✏️ LOGO: Replace span with <img src="images/logo.png" alt="Brilliant Brain Academy" class="logo-img" /> -->
+        <span class="logo-text">Brilliant<span class="logo-accent"> Brain</span> Academy</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="pages/contact.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="pages/contact.html" class="mobile-link">Contact</a>
+      <a href="pages/contact.html" class="btn btn-primary" style="margin-top:1rem;">Get Started</a>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Personalized Learning</div>
+      <h1 class="hero-title">Brilliant Brain<br /><span>Academy</span></h1>
+      <p class="hero-subtitle">Personalized learning for every mind. From one-on-one tutoring and ABA therapy to yoga, language classes, and parent consulting — we meet every learner where they are.</p>
+      <div class="hero-buttons">
+        <a href="pages/contact.html" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+        <a href="#services" class="btn btn-outline btn-lg">Explore Services</a>
+      </div>
+      <div class="hero-cards">
+        <a href="pages/tutoring.html" class="hero-card">Tutoring</a>
+        <a href="pages/aba-tutoring.html" class="hero-card">ABA-Based Tutoring</a>
+        <a href="pages/aba-therapy.html" class="hero-card">ABA Therapy</a>
+        <a href="pages/yoga.html" class="hero-card">Yoga</a>
+        <a href="pages/courses.html" class="hero-card">Mini Courses</a>
+        <a href="pages/consulting.html" class="hero-card">Parent Consulting</a>
+        <a href="pages/languages.html" class="hero-card">Language Classes</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg" class="brain-svg">
+        <circle cx="210" cy="210" r="190" fill="rgba(255,255,255,0.03)"/>
+        <circle cx="210" cy="210" r="130" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" stroke-dasharray="6 8"/>
+        <circle cx="210" cy="210" r="80"  fill="none" stroke="rgba(255,255,255,0.1)"  stroke-width="1.5" stroke-dasharray="4 6"/>
+        <circle cx="210" cy="130" r="10" fill="#93c5fd" opacity="0.9"/>
+        <circle cx="150" cy="190" r="8"  fill="#bfdbfe" opacity="0.8"/>
+        <circle cx="270" cy="190" r="8"  fill="#bfdbfe" opacity="0.8"/>
+        <circle cx="180" cy="260" r="9"  fill="#60a5fa" opacity="0.85"/>
+        <circle cx="240" cy="260" r="9"  fill="#60a5fa" opacity="0.85"/>
+        <circle cx="210" cy="210" r="14" fill="#93c5fd" opacity="1"/>
+        <line x1="210" y1="130" x2="150" y2="190" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+        <line x1="210" y1="130" x2="270" y2="190" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+        <line x1="150" y1="190" x2="210" y2="210" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+        <line x1="270" y1="190" x2="210" y2="210" stroke="#bfdbfe" stroke-width="1.5" opacity="0.4"/>
+        <line x1="210" y1="210" x2="180" y2="260" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+        <line x1="210" y1="210" x2="240" y2="260" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="120" cy="120" r="5" fill="#bfdbfe" opacity="0.4"/>
+        <circle cx="300" cy="115" r="5" fill="#bfdbfe" opacity="0.4"/>
+        <circle cx="95"  cy="270" r="5" fill="#bfdbfe" opacity="0.35"/>
+        <circle cx="325" cy="270" r="5" fill="#bfdbfe" opacity="0.35"/>
+        <line x1="120" y1="120" x2="210" y2="130" stroke="#bfdbfe" stroke-width="1" opacity="0.2"/>
+        <line x1="300" y1="115" x2="210" y2="130" stroke="#bfdbfe" stroke-width="1" opacity="0.2"/>
+        <line x1="95"  y1="270" x2="180" y2="260" stroke="#bfdbfe" stroke-width="1" opacity="0.2"/>
+        <line x1="325" y1="270" x2="240" y2="260" stroke="#bfdbfe" stroke-width="1" opacity="0.2"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <!-- ✏️ LOGO: Replace this with your own photo: <img src="images/about-photo.jpg" alt="About Brilliant Brain Academy" class="about-photo" /> -->
+          <img
+            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80"
+            alt="Students learning at Brilliant Brain Academy"
+            class="about-photo"
+          />
+        </div>
+        <div class="about-text">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title">We Are Brilliant Brain <span class="accent-text">Academy</span></h2>
+          <p class="body-text">Welcome to Brilliant Brain Academy Inc. — where innovation, compassion, and education come together. We are dedicated to helping children and learners of all abilities build confidence, develop skills, and unlock their full potential through personalized tutoring.</p>
+          <p class="body-text">Our programs are designed to support academic growth, creativity, communication, and independent thinking in a positive and inclusive environment. At Brilliant Brain Academy, we believe every child learns differently. That's why we combine experienced educators, special needs support, and modern technology to create learning plans tailored to each student's unique strengths and goals.</p>
+          <p class="body-text" style="font-style:italic; color:var(--blue-700); font-weight:500;">Our mission: To empower every mind to learn brilliantly and succeed confidently.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div>
+                <strong>AI-Enhanced Learning</strong>
+                <p>Smart tools that adapt to each student's pace and learning style.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div>
+                <strong>Expert Educators</strong>
+                <p>Certified teachers and specialists with proven track records.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div>
+                <strong>Family-Centred</strong>
+                <p>We keep parents informed and involved every step of the way.</p>
+              </div>
+            </div>
+          </div>
+          <a href="pages/contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DIVIDER ========== -->
+    <div class="divider-inner">
+      <p class="divider-quote">
+        "Education is not the filling of a pail, but the lighting of a fire."
+        <span>— William Butler Yeats</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">What Families Say</div>
+      <h2 class="section-title" style="text-align:center;">Real Results, <span class="accent-text">Real Stories</span></h2>
+      <p class="section-subtitle">We measure success by the confidence and growth we see in every student.</p>
+      <div class="testimonials-grid">
+        <!-- ✏️ FILL IN: Replace with real client quotes, names, and roles -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">5/5</div>
+          <p class="testimonial-quote">"My daughter went from failing math to getting an A in just three months. The tutors are incredibly patient and skilled."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div><strong>Sarah M.</strong><span>Parent of Grade 9 Student</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-featured">
+          <div class="testimonial-stars">5/5</div>
+          <p class="testimonial-quote">"The parent consulting session completely changed how I understood my son's learning needs. I finally feel like we have a real plan."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JR</div>
+            <div><strong>James R.</strong><span>Parent of Two</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">5/5</div>
+          <p class="testimonial-quote">"I completed their French language course and I'm now conversational. The instructors make it fun and the curriculum is well-structured."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div><strong>Amina L.</strong><span>Adult Language Learner</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="credentials-bar">
+        <!-- ✏️ FILL IN: Replace with your actual credentials -->
+        <div class="credential-item"><div class="credential-icon"></div><span>Certified Educators</span></div>
+        <div class="credential-item"><div class="credential-icon"></div><span>AI Learning Technology</span></div>
+        <div class="credential-item"><div class="credential-icon"></div><span>Data-Driven Progress Tracking</span></div>
+        <div class="credential-item"><div class="credential-icon"></div><span>Multi-Language Programs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="section-label" style="text-align:center;">What We Offer</div>
+      <h2 class="section-title" style="text-align:center;">Our <span class="accent-text">Core Services</span></h2>
+      <p class="section-subtitle">Expert programs designed to support learners and families at every stage.</p>
+
+      <div class="service-list">
+
+        <a href="pages/tutoring.html" class="service-row">
+          <div class="service-row-bar bar-1"></div>
+          <div class="service-row-content">
+            <h3>Tutoring</h3>
+            <p>One-on-one and small-group tutoring for students from elementary to high school in all core subjects. Our personalized approach combines proven teaching strategies, AI-assisted assessments, and confidence-building support.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/aba-tutoring.html" class="service-row">
+          <div class="service-row-bar bar-5"></div>
+          <div class="service-row-content">
+            <h3>ABA-Based Tutoring</h3>
+            <p>Our ABA tutoring services provide personalized academic support tailored to each learner's strengths and needs. Using structured teaching methods and consistent positive reinforcement, we create engaging learning experiences.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/aba-therapy.html" class="service-row">
+          <div class="service-row-bar bar-6"></div>
+          <div class="service-row-content">
+            <h3>ABA Therapy</h3>
+            <p>Personalized ABA therapy designed to help children strengthen essential life skills, improve emotional regulation, and achieve meaningful progress through positive reinforcement and structured learning.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/yoga.html" class="service-row">
+          <div class="service-row-bar bar-4"></div>
+          <div class="service-row-content">
+            <h3>Yoga</h3>
+            <p>Yoga sessions that complement academic learning by improving concentration, reducing stress, and supporting emotional and physical wellness.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/courses.html" class="service-row">
+          <div class="service-row-bar bar-2"></div>
+          <div class="service-row-content">
+            <h3>Mini Courses</h3>
+            <p>Short, engaging courses designed to teach practical future-ready skills such as coding, website building, digital creativity, technology fundamentals, and financial literacy through hands-on learning experiences.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/consulting.html" class="service-row">
+          <div class="service-row-bar bar-3"></div>
+          <div class="service-row-content">
+            <h3>Parent Consulting</h3>
+            <p>Personalized academic and educational consulting services for elementary and high school families, including IEP guidance, school advocacy, course planning, university applications, and foreign admissions support.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+        <a href="pages/languages.html" class="service-row">
+          <div class="service-row-bar bar-7"></div>
+          <div class="service-row-content">
+            <h3>Language Classes</h3>
+            <p>Immersive language learning programs designed to build practical communication skills, cultural understanding, and confidence in everyday conversations.</p>
+          </div>
+          <div class="service-row-arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to Start Your Learning Journey?</h2>
+        <p>Schedule your free consultation today — no strings attached.</p>
+        <a href="pages/contact.html" class="btn btn-white btn-lg">Contact Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <!-- ✏️ LOGO: Replace span with <img> when ready -->
+        <span class="logo-text footer-logo">Brilliant<span class="logo-accent"> Brain</span> Academy</span>
+        <p>Personalized learning for every brilliant mind.</p>
+        <div class="social-links">
+          <!-- ✏️ FILL IN: Your social media URLs -->
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Instagram">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="pages/tutoring.html">Tutoring</a>
+        <a href="pages/aba-tutoring.html">ABA-Based Tutoring</a>
+        <a href="pages/aba-therapy.html">ABA Therapy</a>
+        <a href="pages/yoga.html">Yoga</a>
+        <a href="pages/courses.html">Mini Courses</a>
+        <a href="pages/consulting.html">Parent Consulting</a>
+        <a href="pages/languages.html">Language Classes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: ngeetanyak10@gmail.com</p>
+        <p>Phone: (514) 928-5602</p>
+        <p>Location: Oshawa, Ontario</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Brilliant Brain Academy Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
