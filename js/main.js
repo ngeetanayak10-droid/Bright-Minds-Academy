@@ -51,16 +51,11 @@ if (contactForm) {
     btn.textContent = 'Sending…';
     btn.disabled = true;
 
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData.entries());
-
     try {
-      // ✏️ FILL IN: If you set up a backend (server.js) replace the URL below.
-      // For Netlify Forms, add netlify attribute to <form> and this fetch is optional.
-      const res = await fetch('/api/contact', {
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(contactForm)).toString(),
       });
 
       if (res.ok) {
