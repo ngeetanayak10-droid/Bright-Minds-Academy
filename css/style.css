@@ -859,7 +859,7 @@ a  { text-decoration: none; color: inherit; }
 
 /* Hero */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80');
+  background-image: url('../images/tutoringkids.avif');
   background-size: cover;
   background-position: center top;
   position: relative;
