@@ -220,28 +220,19 @@ a  { text-decoration: none; color: inherit; }
 .hero {
   min-height: 88vh;
   display: flex;
-  align-items: center;
-  padding: 120px 24px 80px;
+  align-items: stretch;
+  padding: 0;
   position: relative;
   overflow: hidden;
   background: var(--blue-900);
 }
-.hero-bg-shapes { position: absolute; inset: 0; pointer-events: none; }
-/* Subtle flat overlay shapes — no blur gradients */
-.shape {
-  position: absolute;
-  border-radius: 50%;
-  opacity: .06;
-  background: var(--white);
-}
-.shape-1 { width: 480px; height: 480px; top: -120px; left: -120px; }
-.shape-2 { width: 360px; height: 360px; bottom: -60px; right: 8%; }
-.shape-3 { width: 260px; height: 260px; top: 38%; left: 42%; }
-
 .hero-content {
   position: relative;
   z-index: 1;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 48px 80px 5vw;
   min-width: 0;
 }
 .hero-badge {
@@ -307,12 +298,14 @@ a  { text-decoration: none; color: inherit; }
   border-color: rgba(255,255,255,.3);
   transform: translateY(-2px);
 }
-.hero { flex-direction: row; gap: 40px; justify-content: center; max-width: 100%; }
-.hero-visual { flex: 0 0 360px; display: flex; align-items: center; justify-content: center; }
-.brain-svg { width: 100%; max-width: 360px; animation: float 6s ease-in-out infinite; opacity: .85; }
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-14px); }
+.hero-content { flex: 0 0 35%; }
+.hero-image { flex: 0 0 65%; position: relative; overflow: hidden; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 25, 50, 0.52);
 }
 
 /* ===================== ABOUT ===================== */
@@ -774,7 +767,8 @@ a  { text-decoration: none; color: inherit; }
   .about-grid { grid-template-columns: 1fr; }
   .about-visual { display: none; }
   .hero { flex-direction: column; }
-  .hero-visual { display: none; }
+  .hero-content { flex: none; padding: 100px 24px 48px; }
+  .hero-image { flex: none; width: 100%; height: 340px; }
 }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
@@ -858,25 +852,6 @@ a  { text-decoration: none; color: inherit; }
 }
 
 /* ===================== PHOTO BACKGROUNDS — MINIMAL OVERLAY FOR READABILITY ===================== */
-
-/* Hero */
-.hero {
-  background-image: url('../images/tutoringkids.avif');
-  background-size: cover;
-  background-position: center top;
-  position: relative;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 25, 50, 0.52);
-  z-index: 0;
-}
-.hero > * { position: relative; z-index: 1; }
-.hero-title  { color: var(--white); }
-.hero-subtitle { color: rgba(255,255,255,0.88); }
-.hero-badge { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); color: var(--white); }
 
 /* About section image — no overlay needed, sits beside white text on white bg */
 .about-img-placeholder { display: none; }
