@@ -653,13 +653,13 @@ a  { text-decoration: none; color: inherit; }
 .footer {
   background: var(--blue-950);
   color: var(--blue-200);
-  padding: 68px 0 0;
+  padding: 44px 0 0;
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: 48px;
-  padding-bottom: 48px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 32px;
+  padding-bottom: 32px;
 }
 .footer-brand p { font-size: .88rem; line-height: 1.7; margin-top: 10px; color: var(--blue-300); }
 .footer-logo { color: var(--white); font-size: 2rem; white-space: nowrap; }
@@ -686,9 +686,10 @@ a  { text-decoration: none; color: inherit; }
   transition: color var(--transition);
 }
 .footer-col a:hover { color: var(--white); }
+.footer-col h4.footer-col-spacer { visibility: hidden; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,.07);
-  padding: 22px 24px;
+  padding: 14px 24px;
   text-align: center;
   font-size: .82rem;
   color: var(--blue-400);
@@ -786,6 +787,7 @@ a  { text-decoration: none; color: inherit; }
   .feature-grid-2 { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
+  .footer-col-spacer { display: none; }
   .form-row { grid-template-columns: 1fr; }
   .info-box { padding: 28px 20px; }
 }
