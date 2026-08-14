@@ -662,7 +662,7 @@ a  { text-decoration: none; color: inherit; }
   padding-bottom: 48px;
 }
 .footer-brand p { font-size: .88rem; line-height: 1.7; margin-top: 10px; color: var(--blue-300); }
-.footer-logo { color: var(--white); }
+.footer-logo { color: var(--white); font-size: 1.8rem; }
 .social-links { display: flex; gap: 10px; margin-top: 18px; }
 .social-link {
   width: 34px; height: 34px;
