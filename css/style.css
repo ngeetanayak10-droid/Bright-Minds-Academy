@@ -669,8 +669,9 @@ a  { text-decoration: none; color: inherit; }
 .social-link:hover { background: var(--blue-700); color: var(--white); border-color: var(--blue-700); }
 .footer-col h4 {
   font-size: .82rem; font-weight: 700;
-  text-transform: uppercase; letter-spacing: .1em;
+  text-transform: uppercase; letter-spacing: .04em;
   color: var(--white); margin-bottom: 14px;
+  white-space: nowrap;
 }
 .footer-col a, .footer-col p {
   display: block; font-size: .88rem;
