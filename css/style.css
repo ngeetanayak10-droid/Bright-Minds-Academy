@@ -625,7 +625,7 @@ a  { text-decoration: none; color: inherit; }
 
 /* ===================== CTA BANNER ===================== */
 .cta-section {
-  background: var(--blue-900);
+  background: var(--blue-950);
   padding: 80px 0;
 }
 .cta-inner {
@@ -649,12 +649,13 @@ a  { text-decoration: none; color: inherit; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2.4fr 1fr 1fr 1fr 1.5fr;
   gap: 32px;
   padding-bottom: 32px;
 }
+.footer-brand { min-width: 0; }
 .footer-brand p { font-size: .88rem; line-height: 1.7; margin-top: 10px; color: var(--blue-300); }
-.footer-logo { color: var(--white); font-size: 2rem; white-space: nowrap; }
+.footer-logo { color: var(--white); font-size: 2rem; }
 .social-links { display: flex; gap: 10px; margin-top: 18px; }
 .social-link {
   width: 34px; height: 34px;
@@ -662,6 +663,7 @@ a  { text-decoration: none; color: inherit; }
   background: rgba(255,255,255,.07);
   border: 1px solid rgba(255,255,255,.1);
   display: flex; align-items: center; justify-content: center;
+  line-height: 1;
   color: var(--blue-300);
   font-size: .82rem; font-weight: 700;
   transition: all var(--transition);
@@ -913,19 +915,6 @@ a  { text-decoration: none; color: inherit; }
 .page-hero .section-label { color: rgba(255,255,255,0.7); letter-spacing: .16em; }
 
 /* CTA banner */
-.cta-section {
-  background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=75');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.cta-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 25, 50, 0.58);
-}
-.cta-section > * { position: relative; z-index: 1; }
 .cta-inner h2 { color: var(--white); }
 .cta-inner p  { color: rgba(255,255,255,0.85); }
 
