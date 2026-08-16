@@ -56,14 +56,14 @@ a  { text-decoration: none; color: inherit; }
 .section-padding { padding: 96px 0; }
 
 /* Accent text — flat colour, no gradient */
-.accent-text { color: var(--blue-600); }
+.accent-text { color: var(--blue-700); }
 
 .section-label {
   font-size: .78rem;
   font-weight: 700;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: var(--blue-600);
+  color: var(--blue-700);
   margin-bottom: 12px;
 }
 .section-title {
@@ -170,7 +170,7 @@ a  { text-decoration: none; color: inherit; }
   font-weight: 700;
   color: var(--blue-900);
 }
-.logo-accent { color: var(--blue-600); }
+.logo-accent { color: var(--blue-700); }
 .logo-img { height: 44px; width: auto; }
 .footer-logo-row { display: flex; align-items: center; gap: 10px; }
 .footer-logo-img { height: 56px; width: auto; }
